@@ -1,11 +1,7 @@
 
-x = int(input("Enter Limit to find Sum of Natural Number from Zero to This: "))
+x = int(input("Enter number to write Table "))
 
-sum = 0
+for num in range(1, 11):  # Range from 1 to 4 (5 is not included)
+    print(str(x) + " x " + str(num) + " = " + str(x * num))
 
-for num in range(0, x):  # Range from 1 to 4 (5 is not included)
-    print(str(num))
-    sum = sum + num
-
-print("Total: " + str(sum))
 
