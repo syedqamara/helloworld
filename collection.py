@@ -1,7 +1,15 @@
 
 x = int(input("Enter number to write Table "))
 
-for num in range(1, 11):  # Range from 1 to 4 (5 is not included)
-    print(str(x) + " x " + str(num) + " = " + str(x * num))
+is_prime = True
+
+for num in range(2, x):
+    if x % num == 0:
+        is_prime = False
+        break
 
 
+if is_prime:
+    print(str(x) + " is a Prime Number")
+else:
+    print(str(x) + " is not a Prime Number")
